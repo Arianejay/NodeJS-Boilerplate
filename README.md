@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-A simple typescript template together with socket io for websocket,mongodb for the database,
+A simple typescript template together with socket io for websocket, mongodb for the database,
 and jsonwebtoken for the user's token.
 
 ### Clone repository
@@ -21,15 +21,15 @@ npm install
 
 ## Dependencies
 
--   [bcrypt][bcrypt]
--   [body-parser][body-parser]
--   [dotenv][dotenv]
--   [express][express]
--   [jsonwebtoken][jsonwebtoken]
--   [mongoose][mongoose]
--   [pino][pino]
--   [socket.io][socket.io]
--   [validator][validator]
+-   [bcrypt][bcrypt] - used for hashing user's password
+-   [body-parser][body-parser] - parses incoming request bodies in our middlewares
+-   [dotenv][dotenv] - loads environment variables
+-   [express][express] - framework for our Node JS
+-   [jsonwebtoken][jsonwebtoken] - JSON Web Token
+-   [mongoose][mongoose] - our object modeling tool for MongoDB
+-   [pino][pino] - used as a logger
+-   [socket.io][socket.io] - our web socket used for real-time communication with the client, paired together with [socket.io-client][socket.io-client].
+-   [validator][validator] - our validator for our strings
 
 # env
 
@@ -45,5 +45,6 @@ JWT_SECRET_TOKEN="XXXXXXX"
 [jsonwebtoken]: https://www.npmjs.com/package/jsonwebtoken
 [mongoose]: https://www.npmjs.com/package/mongoose
 [pino]: https://www.npmjs.com/package/pino
-[socket.io]: https://www.npmjs.com/package/socketio
+[socket.io]: https://www.npmjs.com/package/socket.io
+[socket.io-client]: https://www.npmjs.com/package/socket.io-client
 [validator]: https://www.npmjs.com/package/validator
