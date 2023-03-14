@@ -2,8 +2,7 @@
 
 ## Getting Started
 
-A simple typescript template together with socket io for websocket, mongodb for the database,
-and jsonwebtoken for the user's token.
+A simple typescript template together with socket io for websocket, and mongodb for the database.
 
 ### Clone repository
 
@@ -23,9 +22,10 @@ npm install
 
 -   [bcrypt][bcrypt] - used for hashing user's password
 -   [body-parser][body-parser] - parses incoming request bodies in our middlewares
+-   [cookie-parser][cookie-parser] - cookie parser
 -   [dotenv][dotenv] - loads environment variables
 -   [express][express] - framework for our Node JS
--   [jsonwebtoken][jsonwebtoken] - JSON Web Token
+-   [jsonwebtoken][jsonwebtoken] - jwt
 -   [mongoose][mongoose] - our object modeling tool for MongoDB
 -   [pino][pino] - used as a logger
 -   [socket.io][socket.io] - our web socket used for real-time communication with the client, paired together with [socket.io-client][socket.io-client].
@@ -40,6 +40,7 @@ JWT_SECRET_TOKEN="XXXXXXX"
 
 [bcrypt]: https://www.npmjs.com/package/bcrypt
 [body-parser]: https://www.npmjs.com/package/body-parser
+[cookie-parser]: https://www.npmjs.com/package/cookie-parser
 [dotenv]: https://www.npmjs.com/package/dotenv
 [express]: https://www.npmjs.com/package/express
 [jsonwebtoken]: https://www.npmjs.com/package/jsonwebtoken

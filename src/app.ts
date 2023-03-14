@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import http from "http";
 import mongoose, { ConnectOptions } from "mongoose";
@@ -54,6 +55,7 @@ class App extends http.Server {
      */
     private setMiddleware() {
         this.app.use(cors());
+        this.app.use(cookieParser());
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: false }));
         this.setRouter();
